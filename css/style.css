@@ -1,0 +1,404 @@
+.notification-message {
+    position: fixed;
+    bottom: 5px;
+    right: 22px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+.notification-eror {
+    position: fixed;
+    bottom: 5px;
+    right: 22px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+.notification-danger {
+    border-radius: 5px;
+    background-color: #DC3545    ;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    width: 350px;
+    transform: translateY(100%);
+    animation: fadeInUp 0.5s ease-in-out forwards, fadeOut 0.5s 6s forwards;
+}
+
+.notification-success {
+    border-radius: 5px;
+    background-color: #198754   ;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    width: 350px;
+    transform: translateY(100%);
+    animation: fadeInUp 0.5s ease-in-out forwards, fadeOut 0.5s 6s forwards;
+}
+
+.notification button {
+    font-size: 8px;
+    margin-left: auto;
+}
+
+.text-popup {
+    font-size: 13px;
+    color: white;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+.edit-ajuan {
+    position: relative;
+}
+
+.edit-ajuan::before {
+    content: "Edit Ajuan";
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.edit-ajuan:hover::before {
+    display: block;
+}
+
+.hapus-ajuan {
+    position: relative;
+}
+
+.hapus-ajuan::before {
+    content: "Hapus Ajuan";
+    position: absolute;
+    top: 0;
+    right: 37px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.hapus-ajuan:hover::before {
+    display: block;
+}
+
+.lihat-ajuan {
+    position: relative;
+}
+
+.lihat-ajuan::before {
+    content: "Lihat Detail";
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.lihat-ajuan:hover::before {
+    display: block;
+}
+
+.hapus-ajuan-2 {
+    position: relative;
+}
+
+.hapus-ajuan-2::before {
+    content: "Hapus Ajuan";
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.hapus-ajuan-2:hover::before {
+    display: block;
+}
+
+.confirm-ajuan {
+    position: relative;
+}
+
+.confirm-ajuan::before {
+    content: "Konfirmasi Ajuan";
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.confirm-ajuan:hover::before {
+    display: block;
+}
+
+.lelang-menang {
+    position: relative;
+}
+
+.lelang-menang::before {
+    content: "Klik Untuk Konfirmasi";
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.lelang-menang:hover::before {
+    display: block;
+}
+
+.pesan {
+    position: relative;
+}
+
+.pesan::before {
+    content: "Pesan Masuk";
+    position: absolute;
+    top: 10px;
+    right: 32px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.pesan:hover::before {
+    display: block;
+}
+
+.sidebar-toggle {
+    position: relative;
+}
+
+.sidebar-toggle::before {
+    content: "Pengaturan Sidebar";
+    position: absolute;
+    top: 0;
+    left: 32px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.sidebar-toggle:hover::before {
+    display: block;
+}
+
+.hapus-data-lelang {
+    position: relative;
+}
+
+.hapus-data-lelang::before {
+    content: "Hapus Data";
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.hapus-data-lelang:hover::before {
+    display: block;
+}
+
+.edit-data-lelang {
+    position: relative;
+}
+
+.edit-data-lelang::before {
+    content: "Edit Data";
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.edit-data-lelang:hover::before {
+    display: block;
+}
+
+.edit-data-pengguna {
+    position: relative;
+}
+
+.edit-data-pengguna::before {
+    content: "Edit Data";
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.edit-data-pengguna:hover::before {
+    display: block;
+}
+
+.hapus-data-pengguna {
+    position: relative;
+}
+
+.hapus-data-pengguna::before {
+    content: "Hapus Data";
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.hapus-data-pengguna:hover::before {
+    display: block;
+}
+
+.lelang-diakhiri {
+    position: relative;
+}
+
+.lelang-diakhiri::before {
+    content: "Akhiri Lelang";
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.lelang-diakhiri:hover::before {
+    display: block;
+}
+
+.lelang-dikembalikan {
+    position: relative;
+}
+
+.lelang-dikembalikan::before {
+    content: "Kembalikan Lelang";
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+    z-index: 1000;
+}
+
+.lelang-dikembalikan:hover::before {
+    display: block;
+}
+
+.sold-out-text {
+    font-size: 70px;
+    color: black;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    right: 0;
+    /* background-color: white; */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
